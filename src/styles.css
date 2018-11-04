@@ -76,6 +76,11 @@ a {
     color: white;
 }
 
+.textlink:hover{
+	color: #4BB9F4;
+
+}
+
 a:hover {
     text-decoration: none;
     color: white;
@@ -111,9 +116,20 @@ a:hover {
 
 .home-color {
     color: #4BB9F4;
-
 }
 
+.home-icon-bright {
+	font-size: 23px;
+	color: #4BB9F4;
+}
+
+.home-icon-bright-color {
+    color: #4BB9F4;
+}
+
+.home-icon-bright:hover{
+    opacity: 1;
+}
 #blue {
     text-align: center;
     color: #4BB9F4;
