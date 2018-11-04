@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    color: #4BB9F4;
+    font-size: 38px;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 23px;
+    text-align: center;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: #4BB9F4;
+}
+
+li:hover {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#contacts {
+	display: flex;
+	justify-content: center;
+}
+
+#contacts .contacts-icon {
+	font-size: 40px;
+	opacity: 0.5;
+	margin: 18px;
+	color: #4BB9F4;
+}
+
+#contacts .contacts-icon:hover {
+    opacity: 1;
+}
+
+.home-icon {
+	font-size: 23px;
+	opacity: 0.5;
+	color: #4BB9F4;
+}
+
+.home-icon:hover {
+    opacity: 1;
+}
+
+#blue {
+    text-align: center;
+    color: #4BB9F4;
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+#blue-big {
+    text-align: center;
+    color: #4BB9F4;
+    opacity: 1.0;
+    font-size: 20px;
+}
+
+.blue-title {
+    color: #4BB9F4;
+    opacity: 0.5;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 68px;
+}
