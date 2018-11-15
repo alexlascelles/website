@@ -55,6 +55,13 @@ p {
     margin-left: 20px;
 }
 
+.text-small{
+    font-size: 14px;
+    margin-right: 20px;
+    margin-left: 20px;
+    opacity: 0.5;
+}
+
 .text-narrow{
     font-size: 16px;
     margin-right: 150px;
@@ -62,6 +69,13 @@ p {
 }
 
 .textwhite{
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.textwhite-small{
+    font-size: 18px;
     color: white;
     margin-right: 20px;
     margin-left: 20px;
@@ -214,4 +228,10 @@ a:hover {
 
 .images-bigmargin {
     margin: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
