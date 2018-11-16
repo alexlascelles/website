@@ -110,9 +110,17 @@ a {
     color: white;
 }
 
+.textlink-big{
+    font-size: 22px;
+    color: rgba(75, 185, 244, 0.75);
+}
+
+.textlink-big:hover{
+	color: #4BB9F4;
+}
+
 .textlink:hover{
 	color: #4BB9F4;
-
 }
 
 a:hover {
@@ -171,11 +179,15 @@ a:hover {
     font-size: 14px;
 }
 
-#blue-big {
+.blue-big {
     text-align: center;
-    color: #4BB9F4;
+    color: rgba(75, 185, 244, 0.75);
     opacity: 1.0;
     font-size: 20px;
+}
+
+.blue-big:hover{
+    opacity: 1;
 }
 
 .blue-title {
@@ -264,11 +276,11 @@ a:hover {
     text-align: center;
   }
   
-  .container:hover .middle {
+.container:hover .middle {
     opacity: 1;
   }
   
-  .thetext {
+.thetext {
     color: rgba(255, 255, 255, 0.75);
     font-size: 16px;
   }
