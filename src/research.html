@@ -50,15 +50,16 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-1">
-                <img style="float: right; margin: 0px 0px 0px 0px;" src="3d_cinematic.png" width="30" height="3000" />
-            </div>
-
-            <div class="col-11">
+            <div class="col-12">
                 <br/>
                 <div class="row">
                     <div class="col-5">
-                        <img src="msc.png" alt="msc" height="300"/>
+                        <div class="container">
+                            <img class="pic" src="msc.png" alt="msc" height="300"/>
+                            <div class="middle">
+                                <div class="thetext">Topoplots showing brain activity during trials where the spoken English words "up" and "down" did bias participants' perception of motion (congruent) and where they did not (incongruent).</div>
+                            </div>
+                        </div>
                     </div>
                     
                     <div class="col-7">
@@ -96,7 +97,12 @@
                 <br/>
                 <div class="row">
                     <div class="col-5">
-                        <img src="3d_cinematic.png" alt="MHD"  height="400">
+                        <div class="container">
+                            <img class="pic" src="3d_cinematic.png" alt="MHD"  height="400">
+                            <div class="middle">
+                                <div class="thetext">A close up of one of my simulations. <br/><br/>The magnetic field lines are represented in grey and wind speed by the red/black color map. The blue color map shows mass density (effectively tracing accretion).</div>
+                            </div>
+                        </div>
                     </div>
 
                     <br/>
@@ -127,20 +133,36 @@
                     </div>
 
                     <div class="col-5">
-                        <img src="saguaro.jpg" alt="saguaro" height="300">
+                        <div class="container">
+                            <img class="pic" src="saguaro.jpg" alt="saguaro" height="300">
+                            <div class="middle">
+                                <div class="thetext">A prototype of our IoT home!</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <br/>
                 <br/>
                 <br/>
+                
                 <div class="row">
                     <div class="col-5">
-                        <img src="binary.jpg" alt="binary"  height="300">
-                        <img src="orbits.png" alt="orbits"  height="300">
+                        <div class="container">
+                            <img class="pic" src="orbits.png" alt="orbits"  height="250">
+                            <div class="middle">
+                                <div class="thetext">Some of the different orbits <br/>that I discovered, shown <br/>in stationary (left) and <br/>rotating (right) frames<br/> of reference.</div>
+                            </div>
+                        </div>
                         <br/>
+                        <div class="container">
+                            <img class="pic" src="binary.jpg" alt="binary"  height="300">
+                            <div class="middle">
+                                <div class="thetext">Artist's rendition of an <br/>Earth-like planet orbiting <br/>a binary star system.</div>
+                            </div>
+                        </div>
                         <br/>
-                        <p class="text-small">Left image credit: Lynette Cook / <a class="textlink" href="https://extrasolar.spaceart.org/" target="_blank">extrasolar.spaceart.org<a/></p>
+                        <p class="text-small">Bottom image credit: Lynette Cook / <a class="textlink" href="https://extrasolar.spaceart.org/" target="_blank">extrasolar.spaceart.org</a></p>
                     </div>
 
                     <div class="col-7">
@@ -148,7 +170,7 @@
                         <p class="textwhite">Planetary Orbits Around Binary Star Systems</p>
                         <p class="text">Incredibly, almost half of the star systems that we see in the sky contain multiple stars! This project aimed to simulate planetary orbits around a binary star system. This is important to study because such simulations could be used to detect habitable planets outside our solar system (exoplanets). For life to exist, the planet on which it occurs must keep a stable orbit over long time-scales. <br/> <br/>
                         To find stable orbits, I used a Runge-Kutta approach to solve the differential equations involved in such a 3-body system and tested various initial velocities and separations. I found many different p- and s-type orbits (the two species of stable planetary orbit), as well as some chaotic orbits, and discovered whether they possessed a habitable zone where the planet could sustain life.  </p>
-                        <p class="text">You can read my report on this project <a class="textlink" href="binary_project.pdf" target="_blank">here<a/>.</p>
+                        <p class="text">You can read my report on this project <a class="textlink" href="binary_project.pdf" target="_blank">here</a>.</p>
                         <br/>
                         <br/>                        
                     </div>
@@ -160,22 +182,39 @@
                         <p class="textwhite-large">Computing Project #2:</p> 
                         <p class="textwhite">The Structure of White Dwarf Stars</p>
                         <p class="text">White dwarf (WD) stars are extremely dense objects &#8212; the only thing preventing them from collapsing into a black hole is a force called electron degeneracy pressure, which has to do with the fact that electrons cannot be close enough to occupy the same energy state. They are very important within astronomy and appear in many areas of study, including galaxy formation, stellar evolution, and supernovae. Since over 95% of the stars we observe will end their lives as WDs, knowing how they function and how their parameters behave is crucial.<br/> <br/>
-                        In this project, I created a model for determining the mass-radius variation in WDs, and ultimately found the critical mass of a WD (<a class="textlink" href="https://en.wikipedia.org/wiki/Chandrasekhar_limit" target="_blank">Chandrasekhar limit<a/>), beyond which the electron degeneracy pressure can no longer support the star and it must collapse into a neutron star or a black hole.</p>
-                        <p class="text">You can read more about this project <a class="textlink" href="wd_project.pdf" target="_blank">here<a/>.</p>                      
+                        In this project, I created a model for determining the mass-radius variation in WDs, and ultimately found the critical mass of a WD (<a class="textlink" href="https://en.wikipedia.org/wiki/Chandrasekhar_limit" target="_blank">Chandrasekhar limit</a>), beyond which the electron degeneracy pressure can no longer support the star and it must collapse into a neutron star or a black hole.</p>
+                        <p class="text">You can read more about this project <a class="textlink" href="wd_project.pdf" target="_blank">here</a>.</p>                      
                     </div>
 
                     <div class="col-5">
-                        <img src="white_dwarf2.jpg" alt="wd"  height="200">
-                        <img src="wd.png" alt="myWD"  height="180">
+                        <div class="container">
+                            <img class="pic" src="white_dwarf2.jpg" alt="wd"  height="200">
+                            <div class="middle">
+                                <div class="thetext">Artist's rendition of a <br/>white dwarf star.</div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="container">
+                            <img class="pic" src="wd.png" alt="myWD"  height="180">
+                            <div class="middle">
+                                <div class="thetext">A plot showing how<br/> the parameters of real<br/> WDs compare to my model.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <br/>
                 <br/>
                 <br/>
+
                 <div class="row">
                     <div class="col-4">
-                        <img style="float: left; margin: 0px 20px 0px 20px;" src="submarine2.png" alt="submarine2" height="250">                                   
+                        <div class="container">
+                            <img class="pic" src="submarine2.png" alt="submarine2" height="250"> 
+                            <div class="middle">
+                                <div class="thetext">An exmaple of a supercavitating torpedo. The water in front is boiled to reduce friction.</div>
+                            </div>
+                        </div>                                  
                     </div>
     
                     <div class="col-8">
@@ -184,7 +223,7 @@
                         <p class="text">Before I started university I spent a summer internship at BAE Systems Maritime completing a project focusing on how to reduce physical drag on the new class of nuclear submarines.<br/> <br/>
                         I investigated how changes to the bow, control surfaces, fins, and body of the submarine would affect the hydrodynamics of the submarine. I also investigated if it would be possible to inject polymers or micro-bubbles to change the way the water flowed over the submarine's surface. Finally, I looked into more radical solutions such as supercavitation &#8212; a technology used in some underwater missiles that involves boiling the water in front of the supercavitating body to reduce friction drag.
                         <br/>
-                        <br/>You can read the original report for this project <a class="textlink" href="drag_project.pdf" target="_blank">here<a/>.</p>
+                        <br/>You can read the original report for this project <a class="textlink" href="drag_project.pdf" target="_blank">here</a>.</p>
                     </div>
                 </div>
 
