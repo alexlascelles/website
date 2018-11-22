@@ -165,13 +165,14 @@ a:hover {
 	color: #4BB9F4;
 }
 
+.home-icon-bright:hover{
+    opacity: 1;
+}
+
 .home-icon-bright-color {
     color: #4BB9F4;
 }
 
-.home-icon-bright:hover{
-    opacity: 1;
-}
 #blue {
     text-align: center;
     color: #4BB9F4;
