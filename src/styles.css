@@ -43,14 +43,13 @@ h2 {
     font-size: 23px;
     text-align: center;
     padding: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 p {
     color: rgba(255, 255, 255, 0.75);
-}
-
-.text{
-    font-size: 16px;
+    font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -130,15 +129,14 @@ a:hover {
 
 #contacts {
 	display: flex;
-	justify-content: center;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 #contacts .contacts-icon {
 	font-size: 40px;
     opacity: 0.5;
-    margin-left: 18px;
-    margin-right: 18px;
-    margin-bottom: 6px;
+    margin: 6px 18px;
 	color: #4BB9F4;
 }
 
@@ -147,7 +145,7 @@ a:hover {
 }
 
 .home-icon {
-	font-size: 23px;
+	font-size: 24px;
 	opacity: 0.5;
 	color: #4BB9F4;
 }
@@ -161,7 +159,7 @@ a:hover {
 }
 
 .home-icon-bright {
-	font-size: 23px;
+	font-size: 24px;
 	color: #4BB9F4;
 }
 
@@ -202,7 +200,9 @@ a:hover {
 
 .blue-title-bigger {
     color: #4BB9F4;
-    font-size: 26px;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -223,7 +223,7 @@ a:hover {
 .dividers {
     border-bottom: 0px;
     border-top: 0px;
-    margin: 10px;
+    margin: 0px;
     border: 2px solid rgba(75, 185, 244, 0.5);
 }
 
@@ -231,8 +231,15 @@ a:hover {
     border-bottom: 0px;
     border-top: 0px;
     margin: 10px;
-    border: 1px solid rgba(75, 185, 244, 0.5);
+    border: 1.5px solid rgba(75, 185, 244, 0.5);
     width: 40%;
+}
+
+.dividers-smallish {
+    border-bottom: 0px;
+    border-top: 0px;
+    margin: 0px;
+    border: 1.5px solid rgba(75, 185, 244, 0.5);
 }
 
 .images {
@@ -251,6 +258,7 @@ a:hover {
 
 .pic {
     justify-content: center;
+    margin: 20px;
 }
 
 .pic-dim {
@@ -286,5 +294,17 @@ a:hover {
     font-size: 16px;
   }
 
+#nav-header {
+    width: 100%;
+}
 
-  
+#nav-header ul {
+    padding: 25px 0;
+    margin: 0;
+    font-size: 18px; 
+}
+
+img.alex {
+    margin: 20px 0;
+    width: calc(300px + (450 - 300) * ((100vw - 300px) / (1600 - 300)));
+}
