@@ -63,8 +63,8 @@ p {
 
 .text-narrow{
     font-size: 16px;
-    margin-right: 150px;
-    margin-left: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .textwhite{
@@ -205,7 +205,7 @@ a:hover {
     margin-bottom: 30px;
 }
 
-.container {
+.picframe {
     position: relative;
     text-align: center;
     color: white;
@@ -266,11 +266,11 @@ a:hover {
     opacity: 0.8;
 }
 
-.container:hover .pic-dim {
+.picframe:hover .pic-dim {
     opacity: 0.4;
   }
 
-.container:hover .pic {
+.picframe:hover .pic {
     opacity: 0.4;
   }
 
@@ -280,12 +280,14 @@ a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
+    /* display: flex;
+    justify-content: center; */
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
   
-.container:hover .middle {
+.picframe:hover .middle {
     opacity: 1;
   }
   
