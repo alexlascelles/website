@@ -2,27 +2,15 @@ body {
     background-color: black;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    text-align: center;
     color: white;
     padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center; /* Center-aligns text */
-}
-
-/* Centering container content */
-.container-fluid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .backgrounds-container {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
+ 
 }
 
 .backgrounds {
@@ -31,6 +19,7 @@ body {
     background-repeat: no-repeat;
     height: 180px;
     width: 1100px;
+    vertical-align: middle;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,51 +41,49 @@ h1 {
 h2 {
     color: rgba(255, 255, 255, 0.75);
     font-size: 23px;
+    text-align: center;
     padding: 0;
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-/* Centering text content */
 p {
     color: rgba(255, 255, 255, 0.75);
     font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
-    margin: 20px;
-    max-width: 800px;
-    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.text-small {
+.text-small{
     font-size: 14px;
-    margin: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     opacity: 0.5;
-    text-align: center;
 }
 
-.text-narrow {
+.text-narrow{
     font-size: 16px;
-    margin: 50px;
-    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
-.textwhite {
+.textwhite{
     color: white;
-    margin: 20px;
-    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.textwhite-small {
+.textwhite-small{
     font-size: 18px;
     color: white;
-    margin: 20px;
-    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.textwhite-large {
+.textwhite-large{
     color: white;
     font-size: 24px;
-    margin: 20px;
-    text-align: center;
+    margin-right:20px;
 }
 
 li {
@@ -122,17 +109,17 @@ a {
     color: white;
 }
 
-.textlink-big {
+.textlink-big{
     font-size: 22px;
     color: rgba(75, 185, 244, 0.75);
 }
 
-.textlink-big:hover {
-    color: #4BB9F4;
+.textlink-big:hover{
+	color: #4BB9F4;
 }
 
-.textlink:hover {
-    color: #4BB9F4;
+.textlink:hover{
+	color: #4BB9F4;
 }
 
 a:hover {
@@ -141,16 +128,16 @@ a:hover {
 }
 
 #contacts {
-    display: flex;
+	display: flex;
     justify-content: center;
     margin: 10px 0;
 }
 
 #contacts .contacts-icon {
-    font-size: 40px;
+	font-size: 40px;
     opacity: 0.5;
     margin: 6px 18px;
-    color: #4BB9F4;
+	color: #4BB9F4;
 }
 
 #contacts .contacts-icon:hover {
@@ -158,9 +145,9 @@ a:hover {
 }
 
 .home-icon {
-    font-size: 24px;
-    opacity: 0.5;
-    color: #4BB9F4;
+	font-size: 24px;
+	opacity: 0.5;
+	color: #4BB9F4;
 }
 
 .home-icon:hover {
@@ -172,11 +159,11 @@ a:hover {
 }
 
 .home-icon-bright {
-    font-size: 24px;
-    color: #4BB9F4;
+	font-size: 24px;
+	color: #4BB9F4;
 }
 
-.home-icon-bright:hover {
+.home-icon-bright:hover{
     opacity: 1;
 }
 
@@ -198,7 +185,7 @@ a:hover {
     font-size: 20px;
 }
 
-.blue-big:hover {
+.blue-big:hover{
     opacity: 1;
 }
 
@@ -238,7 +225,6 @@ a:hover {
     border-top: 0px;
     margin: 0px;
     border: 2px solid rgba(75, 185, 244, 0.5);
-    width: 80%;
 }
 
 .dividers-small {
@@ -282,11 +268,11 @@ a:hover {
 
 .picframe:hover .pic-dim {
     opacity: 0.4;
-}
+  }
 
 .picframe:hover .pic {
     opacity: 0.4;
-}
+  }
 
 .middle {
     transition: .5s ease;
@@ -294,19 +280,21 @@ a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
+    /* display: flex;
+    justify-content: center; */
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-}
-
+  }
+  
 .picframe:hover .middle {
     opacity: 1;
-}
-
+  }
+  
 .thetext {
     color: rgba(255, 255, 255, 0.75);
     font-size: 16px;
-}
+  }
 
 #nav-header {
     width: 100%;
@@ -315,7 +303,7 @@ a:hover {
 #nav-header ul {
     padding: 25px 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 18px; 
 }
 
 img.alex {
