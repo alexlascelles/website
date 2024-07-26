@@ -311,3 +311,11 @@ img.alex {
     margin: 20px 0;
     width: calc(300px + (450 - 300) * ((100vw - 300px) / (1600 - 300)));
 }
+
+.video-container {
+    text-align: center;
+}
+
+.video-container iframe {
+    display: inline-block;
+}
