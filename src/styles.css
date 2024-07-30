@@ -319,3 +319,13 @@ img.alex {
 .video-container iframe {
     display: inline-block;
 }
+
+/* CSS for fixed navigation */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black; /* Optional: Adjust the background color */
+    z-index: 1000; /* Ensure it stays on top */
+    padding: 10px 0; /* Optional: Adjust padding */
+}
