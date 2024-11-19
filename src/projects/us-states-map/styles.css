@@ -1,0 +1,116 @@
+/* Cool sans-serif font for the map, date, and button */
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* Full viewport height */
+  background-color: #f4f4f4;
+  text-align: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Container to center everything */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Title styling */
+#title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Style the date display */
+#dateDisplay {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Map styling */
+svg {
+  display: block;
+  margin: 0 auto;
+  max-width: none; /* Remove any max-width to avoid clipping */
+}
+
+/* State path styling */
+.states path {
+  fill: lightgray;
+  stroke: white;
+  stroke-width: 0.5px;
+}
+
+.states path.highlighted {
+  fill: #3498db;
+}
+
+/* State border styling */
+.state-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+/* Slider container styling */
+.slider-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Button styling */
+button, input[type="range"] {
+  font-family: 'Roboto', sans-serif;
+  padding: 12px 30px;
+  font-size: 18px;
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #fc5c7d, #6a82fb);
+  transform: scale(1.05); /* Slight grow effect on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Style for the slider */
+input[type="range"] {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.slider-container p {
+  font-size: 18px;
+}
+
+/* State count display */
+#stateCount {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}

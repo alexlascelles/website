@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Travel Map Over Time</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1>US States I've Visited</h1>
+    <svg width="1000" height="600"></svg>
+    <div>
+      <button id="refreshButton">Refresh</button>
+    </div>
+    <div>
+      <label id="dateDisplay">Date: Jan 1st, 2023</label>
+    </div>
+    <div>
+      <input type="range" id="dateSlider" value="0" min="0" step="1">
+    </div>
+    <div>
+      <label id="stateCount">Number of States Visited: 0</label>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

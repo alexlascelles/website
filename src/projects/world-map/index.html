@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Travel Map Over Time</title>
+    <link rel="stylesheet" href="pan-zoom.css" />
+    <link rel="stylesheet" href="world-map.css" />
+
+    <!-- Load D3 and TopoJSON -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+
+    <!-- Load the main world map module and initialize -->
+    <script defer type="module">
+        import { createWorldMap } from './world-map.js';
+        createWorldMap('world-map');
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Countries I've Visited</h1>
+        
+        <!-- Main SVG for world map -->
+        <svg id="world-map" width="1000" height="600"></svg>
+
+        <!-- Date Slider Control -->
+        <div>
+            <label id="dateDisplay">Date: Apr 13th, 1995</label>
+        </div>
+        <div>
+            <input type="range" id="dateSlider" value="0" min="0" step="1">
+        </div>
+
+        <!-- Country Count Display -->
+        <div>
+            <label id="countryCount">Number of Countries Visited: 0</label>
+        </div>
+
+    </div>
+
+    <!-- Tooltip for displaying country details -->
+    <div class="tooltip">
+        <div>
+            <label>Country:</label>
+            <span class="country"></span>
+        </div>
+    </div>
+</body>
+</html>
