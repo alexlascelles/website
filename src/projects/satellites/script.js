@@ -124,6 +124,31 @@ function setupDateRangeButtons() {
     }
 }
 
+// Select the buttons and the info panels
+const openAboutButton = document.getElementById('open-info-about');
+const openDebrisButton = document.getElementById('open-info-debris');
+const infoAbout = document.getElementById('info-about');
+const infoDebris = document.getElementById('info-debris');
+
+// Function to toggle visibility of info panels
+function togglePanel(panel) {
+    panel.classList.toggle('visible');
+}
+
+// Event listeners to open the panels
+openAboutButton.addEventListener('click', () => togglePanel(infoAbout));
+openDebrisButton.addEventListener('click', () => togglePanel(infoDebris));
+
+// Optional: Close info panels when clicking outside
+document.body.addEventListener('click', (event) => {
+    if (!infoAbout.contains(event.target) && !openAboutButton.contains(event.target)) {
+        infoAbout.classList.remove('visible');
+    }
+    if (!infoDebris.contains(event.target) && !openDebrisButton.contains(event.target)) {
+        infoDebris.classList.remove('visible');
+    }
+});
+
 // Initialize button setup and default active state for "All" button
 setupDateRangeButtons();
 document.getElementById("allButton").classList.add("active");
