@@ -1,0 +1,303 @@
+/* Body style */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* Title style */
+h1 {
+    font-size: 3em;
+    margin: 20px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+a {
+    color:blueviolet;
+}
+
+/* Outer container style with 500px radius padding */
+.outer-container {
+    border: 2px solid white;
+    width: 750px;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Image container style */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+/* Image style */
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* SVG style for satellites */
+.satellite-orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* Info Panel Style */
+.info-panel {
+    position: absolute;
+    top: 50%;
+    right: calc(100% + 20px);
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 0, 0.507);
+    border-radius: 10px;
+    width: 450px;
+    text-align: left;
+}
+
+.info-panel h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.info-panel p {
+    margin: 10px 0;
+    font-size: 0.8em;
+}
+
+.info-panel div {
+    font-size: 0.8em;
+}
+
+.info-panel strong {
+    color:yellow;
+    font-size: 0.8em;
+}
+
+.info-panel .note {
+    font-size: 0.7em; /* Smaller font for the note */
+    color: grey;
+}
+
+.info-panel h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Info Panel 2 Style */
+.info-panel-2 {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 20px);
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 0, 0.507);
+    border-radius: 10px;
+    width: 450px;
+    text-align: left;
+}
+
+.info-panel-2 p {
+    margin: 10px 0;
+    font-size: 0.8em;
+}
+
+.info-panel-2 div {
+    font-size: 0.8em;
+}
+
+.info-panel-2 strong {
+    color:yellow;
+    font-size: 0.8em;
+}
+
+.info-panel-2 .note {
+    font-size: 0.7em; /* Smaller font for the note */
+    color: grey;
+}
+
+.info-panel-2 h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Ruler styling */
+.ruler {
+    position: absolute;
+    top: 0%; /* Start the ruler at the middle of the Earth */
+    left: 0%; /* Center the ruler horizontally */
+    transform: translateX(-50%); /* Adjust to exactly center it */
+    width: 2px; /* Thin line for the ruler */
+    height: 50%; /* Half the height of the container */
+    background-color: cyan; /* Bright cyan color for the ruler */
+    z-index: 3; /* Ensure it is above other elements */
+}
+
+/* Increment text styling */
+.ruler .increment {
+    position: absolute;
+    left: 10px; /* Position the text to the right of the ruler line */
+    color: yellow; /* White text for visibility against black background */
+    font-size: 0.8em; /* Font size for the text */
+    display: inline-block; /* Keep the text on the same line */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Horizontal tick marks on the ruler */
+.ruler .tick {
+    position: absolute;
+    right: -5px; /* Position the tick mark to the right of the ruler */
+    width: 5px; /* Length of the tick mark */
+    height: 2px; /* Thickness of the tick mark */
+    background-color: cyan; /* White color for tick marks */
+}
+
+/* Position the tick marks at different heights for increments */
+.ruler .tick-0 { top: 100%; }
+.ruler .tick-1 { top: 90%; }
+.ruler .tick-2 { top: 80%; }
+.ruler .tick-3 { top: 70%; }
+.ruler .tick-4 { top: 60%; }
+.ruler .tick-5 { top: 50%; }
+.ruler .tick-6 { top: 40%; }
+.ruler .tick-7 { top: 30%; }
+.ruler .tick-8 { top: 20%; }
+.ruler .tick-9 { top: 10%; }
+.ruler .tick-10 { top: 0%; }
+
+
+.formula {
+    font-size: 1.5em;
+    color: grey;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fraction {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color:grey;
+}
+.numerator, .denominator {
+    text-align: center;
+    color:grey;
+}
+.line {
+    width: 100%;
+    border-top: 2px solid grey;
+    margin: 3px 0;
+}
+
+/* Style to remove table borders */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Style for cells without borders */
+th, td {
+    padding: 0px;
+    text-align: left;
+    border: none; /* No visible lines */
+}
+
+th {
+    font-weight: bold;
+    color: grey;
+}
+
+/* Apply the same font as the rest of the website (assuming it's a web font like Google Fonts) */
+#zoomButton {
+    padding: 10px 25px; /* Larger padding for better click area */
+    font-size: 12px; /* Match the font size with the rest of the site */
+    font-family: 'Orbitron', sans-serif; /* Use the website's font family, e.g., Roboto */
+    background: linear-gradient(145deg, #6e7dff, #4c57f2); /* Gradient background for a cool effect */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 50px; /* Fully rounded corners */
+    cursor: pointer; /* Pointer cursor for interaction */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15); /* Add a subtle shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth transition for all changes */
+    outline: none; /* Remove outline on click */
+    text-transform: uppercase; /* Uppercase text for a modern look */
+    letter-spacing: 1px; /* Slight letter spacing */
+}
+
+/* Hover effect for a glowing effect */
+#zoomButton:hover {
+    background: linear-gradient(145deg, #4c57f2, #6e7dff); /* Reverse gradient on hover */
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+/* Active effect to make the button appear pressed */
+#zoomButton:active {
+    background: linear-gradient(145deg, #4c57f2, #6e7dff); /* Keep the gradient the same */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Softer shadow on active */
+    transform: translateY(2.5px); /* Button presses down slightly */
+}
+
+#zoomButton {
+    display: inline-block; /* Align the button inline with other elements */
+    background-color: #444444;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center; /* Vertically center items */
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #333333;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777777;
+}
+
+button.active {
+    background-color: #555555;
+}
+
+#satellite-count {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
