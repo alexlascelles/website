@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -281,4 +282,289 @@
     <script src="script.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Musical Tastes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#intro" class="nav-link">Intro</a></li>
+            <li><a href="#artist-analysis" class="nav-link">Artist Analysis</a></li>
+            <li><a href="#genre-analysis" class="nav-link">Genre Analysis</a></li>
+            <li><a href="#song-length" class="nav-link">Song Length Statistics</a></li>
+            <li><a href="#release-date" class="nav-link">Song Release Date Analysis</a></li>
+            <li><a href="#date-added" class="nav-link">Date Added to Library</a></li>
+            <li><a href="#musical-properties" class="nav-link">Musical Properties</a></li>
+            <li><a href="#final-thoughts" class="nav-link">Final Thoughts</a></li>
+            <li><a href="#playlists" class="nav-link">Playlists</a></li>
+        </ul>
+    </nav>
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <header>
+        <img src="images/song-playback.png">
+        <h1>Exploring Musical Tastes</h1>
+        <p>
+            A data analysis of my Spotify music collection: artist variety, genre distribution, song lengths, and more.
+            <br><br>
+            <b>Tools:</b> Python (pandas, matplotlib), Exportify
+        </p>
+    </header>
+
+    <section id="intro" class="post-section">
+        <h2>Intro</h2>
+        <p>
+            Music has always been a big part of my life. Besides playing it, I spend a fair amount of time listening to it 
+            &mdash; around 45,000 minutes a year &mdash; that's ~14% of my waking hours! And when people ask you "What music are 
+            you into?", I find that's a hard question to answer. Sure, I could list off a few of my favorite bands or genres, 
+            but there are so many other things that go into it &mdash; songs don't necessarily fall into a single genre or category, 
+            and your preferences depend on your mood, environment, and they change over time. So I decided to start this project 
+            as an attempt to quantify some of my musical tastes and, at the very least, satisfy some of my curiosities!
+        </p>
+
+        <h3>How Did I Make This?</h3>
+
+        <p>
+            This project started with <a href="https://exportify.net/#playlists" target="_blank">Exportify</a> &mdash; 
+            a great website where you can download your Spotify playlists in CSV format. From there, I coded a Python script 
+            to parse the data from my "Liked Songs" playlist &mdash; the largest playlist I have, containing all of the songs in 
+            my library (11,295). I then used pandas and matplotlib to output plots that analyzed various aspects such as 
+            artist/genre distributions, song release dates, or musical properties.
+        </p>
+
+        <h3>Can I Try It?</h3>
+
+        <p>
+            Definitely! If you're curious about your own musical taste and you use a Spotify account, follow these steps below to 
+            analyze your musical data:
+        </p>
+        
+        <ol>
+            <li>
+                Head to <a href="https://exportify.net/#playlists" target="_blank">Exportify</a> and click: <br>
+                <img src="images/getting-started.png" style="max-width: 146.5px; display: inline-block; vertical-align: middle; margin: 0.5em">
+            </li>
+            <li>Export your "Liked Songs" playlist (or any other playlist you wish to analyze).</li>
+            <li>
+                Download this Python analysis file:
+                <a href="https://raw.githubusercontent.com/alexlascelles/website/master/src/projects/spotify/spotify_analysis_online.zip?raw=true" download>
+                    <button type="button" style="background-color: #1e90ff; color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px; border-radius: 5px;">
+                        Download
+                    </button>
+                </a>                
+            </li>
+            <li>
+                Extract <code>spotify_analysis_online.py</code> into a folder and put your CSV in the same folder.
+            </li>
+            <li>
+                Open <code>spotify_analysis_online.py</code> in your favorite Python IDE, I like Spyder or VS Code.
+                <br>
+                Edit line 13 to replace "yourfile.csv" with your CSV filename, then run the script. This will output PNGs to a folder named "plots" which you can view!
+            </li>
+        </ol>
+        <p>
+            If you run into any problems, please <a href="https://www.alexlascelles.com/src/contact.html">contact me</a> and I'll 
+            try my best to fix the issue. 
+            <br>
+            Additionally, if you have ideas for other things to analyze, I'm all ears!
+        </p>
+    </section>
+    
+    <section id="artist-analysis" class="post-section">
+        <h2>Artist Analysis</h2>
+        <p>
+            I began by analyzing the distribution of artists in my playlist to see who appears most frequently. This is similar to 
+            what Spotify does with Spotify Wrapped each year. However, I decided to plot to top 30 artists in my library, ranked by 
+            the number of their songs that I have liked.
+        </p>
+        <img src="images/top_30_artists_alex-liked.png" alt="Artist Analysis Plot Liked Songs">
+        <p>
+            Since this is data for the entire time I have been using Spotify (13 years), it includes songs I liked back when I was a 
+            teenager (mostly the Eminem). I decided to analyze another one of my playlists called <b>"Current Favorites"</b> to see if my 
+            favorite artists have changed much over time. I started that playlist 7 years ago, and keep it updated based on my 
+            current taste, meaning I also remove songs when I'm no longer a huge fan. Let's see how it compares.
+        </p>
+        <img src="images/top_30_artists_alex-current_favourites.png" alt="Artist Analysis Plot Current Favourites" style="filter: hue-rotate(30deg);">
+        <p>
+            This looks like a better representation of my favorite bands at the moment!
+        </p>
+    </section>
+
+    <section id="genre-analysis" class="post-section">
+        <h2>Genre Analysis</h2>
+        <p>
+            Next, I tried breaking down the different genres represented in my playlist and identifying the most common ones. Spotify tags 
+            each song with a number of different genres, and each song can have multiple genres assigned. What genres do I listen to?
+        </p>
+        <img src="images/top_30_genres_alex-liked.png" alt="Genre Analysis Plot">
+        <p>
+            I had no idea what "permanent wave" or "mellow gold" were so had to look them up. 
+
+            <section class="quote-section">
+                <blockquote class="quote">
+                    <span class="quote-marks">" </span><b>Permanent wave</b> is characterized by a heavy reliance on synthesizers and drum machines, as well as a strong emphasis 
+                    on melody and rhythm. It often combines elements of pop, funk, and rock music. <span class="quote-marks"> "</span>
+                </blockquote>
+            </section>
+
+            <section class="quote-section">
+                <blockquote class="quote">
+                    <span class="quote-marks">" </span><b>Mellow Gold</b> contains elements of soft rock and folk rock, and has a strong correlation with album-oriented classic 
+                    rock of the '60s, '70s, and '80s. Emphasis is on clean production, harmonies, and melodic compositions.<span class="quote-marks"> "</span>
+                </blockquote>
+            </section>
+
+            And again, let's do it for my <b>"Current Favorites"</b> playlist:
+        </p>
+        <img src="images/top_30_genres_alex-current_favourites.png" alt="Artist Analysis Plot Current Favourites" style="filter: hue-rotate(30deg);">
+        <p>
+            Never thought I'd be listening to "yacht rock".
+        </p>
+    </section>
+
+    <section id="song-length" class="post-section">
+        <h2>Song Length Statistics</h2>
+        <p>
+            Let's explore the distribution of song lengths.
+        </p>
+        <img src="images/song_length_distribution_alex-liked.png" alt="Song Length Distribution Plot">
+        <p>
+            My average song is 4:28, which is quite a bit longer than the average (~3:30). I'd put this down to listening to a lot of jazz 
+            and metal, which tend to be longer. Interestingly, average song length has changed over time, gradually increasing since the 60s 
+            before reaching a peak around the early 90s at around 4 minutes.
+        </p>
+
+        </p>
+    </section>
+
+    <section id="release-date" class="post-section">
+        <h2>Song Release Date Analysis</h2>
+        <p>
+            Next, I wanted to see which era the songs that I listen to are from.
+        </p>
+        <img src="images/song_release_decade_distribution_alex-liked.png" alt="Song Release Decade Distribution Plot">
+        <p>
+            It looks like my musical taste exponentially decays the further back in time we travel, with a bit of a 
+            lull around the 80s. I would expect it to be generally anchored around your birth year and grow from that 
+            time onwards, as new music gets released during your lifetime. I was born in the 90s, so that checks out; 
+            still, I'd be curious to test this by looking at the data for people of different ages. The amount of music 
+            released has also grown over time (check out this 
+            <a href="https://blog.s-schoener.com/2018-02-03-music-data/" target="_blank">cool blog post</a> by Sebastian 
+            Schöner), which might contribute towards this exponential decay shape. Personal preference almost certainly 
+            plays a part, too &mdash; despite being a millennial, I'm a big fan of older music, especially from the 70s.
+            <br><br>
+            What about for my <b>"Current Favorites"</b> playlist?
+        </p>
+        <img src="images/song_release_decade_distribution_alex-current_favourites.png" alt="Song Release Decade Distribution Plot Current Favorites" style="filter: hue-rotate(30deg);">
+        <p>
+            Pretty much the same distribution, except more songs from the 70s!
+            <br><br>
+            Let's look in more detail by plotting the exact years instead of the decades. <b>"Liked Songs"</b> on top and <b>"Current Favorites"</b> below.
+        </p>
+
+        <img src="images/song_release_year_distribution_alex-liked.png" alt="Song Release Year Distribution Plot">
+        <img src="images/song_release_year_distribution_alex-current_favourites.png" alt="Song Release Year Distribution Plot Current Favorites" style="filter: hue-rotate(30deg);">
+
+        <p>
+            Seems like 2013 is my overall favorite year for music, with 657 songs coming from that year alone! 
+            My favorites playlist peaks a bit later, around 2016. I wonder in the dip at 2020 was due to the pandemic.
+        </p>
+    </section>
+
+    <section id="date-added" class="post-section">
+        <h2>Date Added to Library</h2>
+        <p>
+            I started using Spotify in 2011. However, Spotify subsequently changed the way that songs were saved into playlists. 
+            In 2017 I started using the "Liked Songs" feature, and added all the songs from my previous playlists there. 
+            So let's take a look at how I added music to my library from 2017 onwards. I tracked the dates when songs 
+            were added to my library to see when I've been most active in saving music. 
+            <br><br>
+            <b>*Note*</b> in Sep 2021 I added a whole bunch of songs at once, so we should ignore this datapoint. 
+        </p>
+        <img src="images/songs_added_by_year_alex-liked.png" alt="Year Added Distribution Plot">
+        <p>
+            It looks like 2023 was a big year for music exploration! During the pandemic years, I also added quite a lot of songs. 
+            I was traveling for a large part of 2024, which might explain the dip there. Let's look at a monthly breakdown to see 
+            which months of the year I'm generally most active.
+        </p>
+        <img src="images/songs_added_by_month_alex-liked.png" alt="Month Added Distribution Plot">
+        <p>
+            Looks like Feb, Jun, Aug, and Dec are when I am searching for and adding most of my music.
+        </p>
+    </section>
+
+    <section id="musical-properties" class="post-section">
+        <h2>Musical Properties</h2>
+        <p>
+            Spotify outputs a range of musical properties such as tempo, danceability, and valence. I think they are more of 
+            an estimate than an exact science, so this section should be taken with a pinch of salt. Regardless, let's take a 
+            look to scope out the overall mood and feel of my library.
+        </p>
+        <img src="images/continuous_properties_distribution_alex-liked.png"
+            alt="Continuous Musical Properties Distribution Plot">
+            <p>
+                Valence stands out to me, since I always seem to prefer songs in a minor key, and not "happy" songs. 
+                Rock and metal tend to be more angsty and like this, which adds up here. Tempo is also interesting, since 
+                musicians tend to prefer a tempo of 120 bpm (it's commonly said that this is best tempo for a "hit" song) 
+                and we can see that in the data here. It's negatively skewed suggesting I slightly prefer slower songs which 
+                seems true as well. 
+                <br><br>
+                Let's look at the categorical variables Mode, Key, and Time Signature &mdash; comparing them against 
+                my <b>"Current Favorites"</b> playlist below again:
+            </p>
+        <img src="images/categorical_properties_distribution_alex-liked.png"
+            alt="Categorical Musical Properties Distribution Plot">
+        <img src="images/categorical_properties_distribution_alex-current_favourites.png"
+            alt="Categorical Musical Properties Distribution Plot Current Favorites" style="filter: hue-rotate(30deg);">
+            <p>
+                My theory about preferring minor keys is again confirmed here. C, D, Db, E, F, G, and A are all popular 
+                keys, while Eb and Gb are rarely used which is funny since Ebm is one of my favorite keys to play in.
+            </p>
+    </section>
+
+    <section id="final-thoughts" class="post-section">
+        <h2>Final Thoughts</h2>
+        <p>
+            This was a fun project which revealed some interesting facts about my musical tastes. I'd be interested to do 
+            some deeper analysis and perhaps compare my data against someone else's &mdash; for example, it'd be cool 
+            to see a plot showing how much your musical tastes overlap with someone (like a "Music Compatibility Score") or 
+            see which of your top 50 artists do they also listen to. Let me know if you have any ideas, and thanks for reading!
+        </p>
+    </section>
+
+    <section id="playlists" class="post-section">
+        <h2>Playlists</h2>
+        <p>
+            For those interested, here's a preview of my <b>"Current Favourites"</b> playlist. 
+            <br>
+            Click the title to hear the full thing on Spotify.
+        </p>
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/3CbztchWagvKciOwfODMLm?utm_source=generator&theme=0" width="100%"
+            height="652" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Alex Lascelles</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+>>>>>>> 28d01d0ded0c34f95aa305681025b0390ffc287c
 </html>
