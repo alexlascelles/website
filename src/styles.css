@@ -329,3 +329,22 @@ img.alex {
     z-index: 1000; /* Ensure it stays on top */
     padding: 10px 0; /* Optional: Adjust padding */
 }
+
+.bio-container {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #read-more, #read-less {
+    color: #4BB9F4;
+    cursor: pointer;
+  }
+  
+  #read-more:hover, #read-less:hover {
+    color: #4BB9F4;
+  }
+  
